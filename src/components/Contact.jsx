@@ -17,15 +17,15 @@ const Contact = () => {
             <div className="flex relative w-3/5 h-full">
                 <div className="flex relative h-full w-1/3 items-center gap-4">
                     <img className='flex w-[10%] h-auto' src={email} alt="" />
-                    khushimish26@gmail.com
+                    Email
                 </div>
                 <div className="flex relative h-full items-center gap-4 w-1/3">
                     <img className='flex w-[10%] h-auto' src={phone} alt="" />
-                    +91-8860914595
+                    Phone number
                 </div>
                 <div className="flex relative h-full w-1/3 items-center gap-4">
                     <img className='flex w-[10%] h-auto' src={github} alt="" />
-                    <a href="https://github.com/KHUSHIM02/"  >KHUSHIM02</a>
+                    <a href="https://www.youtube.com/watch?v=xvFZjo5PgG0"  >Github</a>
                 </div>
             </div>
         </div>
