@@ -32,8 +32,6 @@ const ImageSlider = (props) => {
 
     return (
         <motion.section ref={ref} initial={{ top: `100%`, scale: 0 }} animate={isInView ? { top: 0, scale: 1 } : { top: `100%`, scale: 0 }} transition={{ duration: 0.8 }} className={`${style.slider}`} >
-            <div className={`${style.btn} ${style.leftArrow}`} onClick={prevSlide} > <img src={left} alt="" /> </div>
-            <div className={`${style.btn} ${style.rightArrow}`} onClick={nextSlide}> <img src={right} alt="" /> </div>
             {slides.map((slide, index) => {
                 return (
                     <div
@@ -47,21 +45,23 @@ const ImageSlider = (props) => {
                                 backgroundPosition: `center`,
                                 backgroundRepeat: `no-repeat`,
                                 backgroundAttachment: `fixed`,
-                                backgroundSize: `cover` 
-                        }}></div>
-                        <div className="flex relative w-full sm:text-5xl text-lg font-bold text-center justify-center align-center">
-                            {slide.name}
-                        </div>
-                        <div className="flex relative w-full p-1 sm:p-0 sm:w-[60%] text-sm sm:text-xl justify-center ">
-                            {slide.desc}
-                        </div>
-                        <div className="flex relative w-[80%] text-sm sm:text-xl justify-center gap-8">
-                            {slide.languages}
+                                backgroundSize: `cover`
+                            }}></div>
+                            <div className="flex relative w-full sm:text-5xl text-lg font-bold text-center justify-center align-center">
+                                {slide.name}
+                            </div>
+                            <div className="flex relative w-full p-1 sm:p-0 sm:w-[60%] text-sm sm:text-xl justify-center ">
+                                {slide.desc}
+                            </div>
+                            <div className="flex relative w-[80%] text-sm sm:text-xl justify-center gap-8">
+                                {slide.languages}
+                            </div>
                         </div>
                     </div>
-                    </div>
-    );
-})}
+                );
+            })}
+            <div className={`${style.btn} ${style.leftArrow}`} onClick={prevSlide} > <img src={left} alt="" /> </div>
+            <div className={`${style.btn} ${style.rightArrow}`} onClick={nextSlide}> <img src={right} alt="" /> </div>
         </motion.section >
     );
 };
