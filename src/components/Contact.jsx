@@ -10,7 +10,7 @@ const Contact = () => {
     return (
         <div className='flex relative w-full h-[20vh] justify-between items-center'>
             <div className="flex relative w-2/5 h-full justify-center">
-                <div className="flex relative w-full justify-center items-center text-4xl font-bold">Khushi Mishra</div>
+                <div className="flex relative w-full justify-center items-center text-4xl font-bold">Name Here</div>
                 <div className="flex absolute w-[45%] h-0.5 top-1/2 left-0 bg-amber-300"></div>
                 <div className="flex absolute w-[15%] top-1/2 right-[15%] rotate-90 border border-white"></div>
             </div>
